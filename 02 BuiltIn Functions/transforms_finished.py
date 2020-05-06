@@ -52,6 +52,12 @@ def main():
     letters = list(map(toGrade, grades))
     print(letters)
 
+def filterFunc2(x):
+    if x.isupper():
+        return False
+    return True
+
+
 
 if __name__ == "__main__":
     main()

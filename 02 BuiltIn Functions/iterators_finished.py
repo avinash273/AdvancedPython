@@ -4,7 +4,7 @@
 def main():
     # define a list of days in English and French
     days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
-    daysFr = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"]
+    daysFr = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven"]
 
     # use iter to create an iterator over a collection
     i = iter(days)
