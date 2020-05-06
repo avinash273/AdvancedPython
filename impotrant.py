@@ -1,5 +1,3 @@
-import sys
-
 days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 daysFr = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven"]
 
@@ -57,6 +55,8 @@ squares = list(map(squareFunc, nums))
 print(squares)
 
 # For initializing lowest value
+import sys
+
 n = -sys.maxsize - 1
 
 
@@ -71,3 +71,20 @@ def addition(base, *args):
     for arg in args:
         result += arg
     return result
+
+# Use lambdas to accomplish small func like Cel to Far
+ftemps = [32, 65, 100, 212]
+print(list(map(lambda t: (t - 32) * 5 / 9, ftemps)))
+
+# Used to get alphabet strings (abcde.. ABCD.. abcde.ABCDEF)
+import string
+a = string.ascii_lowercase
+A = string.ascii_uppercase
+num = string.ascii_letters
+print(a, A, num)
+# convert to upper, works for whole string as well
+print(a[1].upper())
+
+# reverse a string
+ftemps = [32, 65, 100, 212]
+print(ftemps[::-1])
