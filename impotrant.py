@@ -1,3 +1,7 @@
+"""
+Read this before interview, will make coding easier
+Also, read online about the time complexity of these inbuilt functions
+"""
 days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 daysFr = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven"]
 
@@ -72,6 +76,7 @@ def addition(base, *args):
         result += arg
     return result
 
+
 # Use lambdas to accomplish small func like Cel to Far
 ftemps = [32, 65, 100, 212]
 print(list(map(lambda t: (t - 32) * 5 / 9, ftemps)))
@@ -88,3 +93,9 @@ print(a[1].upper())
 # reverse a string
 ftemps = [32, 65, 100, 212]
 print(ftemps[::-1])
+
+# raise error
+if (1 == 2):
+    print(1)
+else:
+    raise ArithmeticError("check")
